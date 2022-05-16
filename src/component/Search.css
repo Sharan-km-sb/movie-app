@@ -1,0 +1,37 @@
+h1{
+    color: aliceblue;
+
+}
+
+.search{
+    padding-top: 16vh;
+    padding-bottom: 0;
+}
+
+.search-bar{
+    padding:15px 35px;
+    font-size: 16px;
+    background-color: #ffffff;
+    color:#000000;
+    border-radius: 20px;
+    width:600px;
+
+}
+.search-bar:focus{
+    outline: none;
+}
+.submit-btn{
+    padding:15px 35px;
+    font-size: 16px;
+    background-color: #ffffff;
+    color:#000000;
+    border-radius: 20px;
+
+}
+
+.movie-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

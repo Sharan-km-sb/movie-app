@@ -32,8 +32,8 @@
         transition:  1s cubic-bezier(0.075, 0.82, 0.165, 1);
       }
         .item:hover { 
-          margin: 0 30px;
-          transform: scale(1.05);
+          margin:scale(1.2);
+          transform: scale(1.1);
         }
         .item img{
             width: 100%;
@@ -46,14 +46,11 @@
    opacity: 0.001;
    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
    transform: translateY(5%);
-   padding: 5px 5px;
 }
 .over:hover{
   opacity: 1;
 
 }
-.over h3{
-  margin-bottom: 8px;}
 
      
 

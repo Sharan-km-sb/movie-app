@@ -1,5 +1,7 @@
 import React from 'react';
 import './MoviesList.css';
+import { Link } from 'react-router-dom';
+
 
 const IMG_API = `https://image.tmdb.org/t/p/w500/`;
 
@@ -8,35 +10,37 @@ const IMG_API = `https://image.tmdb.org/t/p/w500/`;
 
 
 const MoviesList = ({
+   id,
     title,
     vote_average,
     overview,
     poster_path, 
     release_data,
-    heading
+  
 }) => {
    
     
     return(
-     <>
-        <div id="MoviesList">
+      <>
+           <div id="MoviesList">
           <div class="wrapper">
-          <section id="section1">
-        
-            <div class="item">
-            <img src={`${IMG_API}${poster_path}`} alt={title}></img>
-          </div>
-          <h3>{title}</h3>
-          <div className='over'>
-            <h3>OVERVIEW</h3>
-            <p>{overview}</p>
-          </div>
-          </section>
+            <section id="section1">
+            <Link to={`/MovieDetails/${id}`}>
+         
+              <div class="item">
+                <img src={`${IMG_API}${poster_path}`} alt={title}></img>
+              </div></Link>
+              <h3>{title}</h3>
 
-          
+
+            </section>
+
+
+          </div>
+
         </div>
         
-        </div></>
+        </>
              
         
 )}
