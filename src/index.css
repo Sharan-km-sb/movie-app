@@ -1,22 +1,19 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family:Avenir-Roman , sans-serif ;
-}
-html{
-    scroll-behavior: smooth;
-    scroll-behavior: smooth;
-    -ms-overflow-style: none;
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #0c111b;
-    color: #f9f9f9;
-    font-family: Avevenir-Roman , sans-serif;
-    max-width: 1260px;
-    margin: auto;
+
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-
-
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
