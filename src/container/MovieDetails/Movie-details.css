@@ -8,8 +8,9 @@
     backdrop-filter: blur(8px);
   
   }
-  h1{
+.movie-title{
     font-size: 60px;
+    color: #ffffff;
     
   }
   .movie-overview{

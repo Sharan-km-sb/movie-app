@@ -11,6 +11,8 @@ h1{
 .search{
     margin-top: 20px;
     padding-left: 20px;
+    background-color: #141414;
+    padding-top: 50px;
    
 }
 
@@ -23,6 +25,7 @@ h1{
     border: solid 2px #141414;
     margin: auto;
     transition: 0.5s;
+    margin-bottom: 30px;
 
 }
 .search-bar:focus{
@@ -45,6 +48,7 @@ h1{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width:90%;
+    max-width:100%;
     margin: auto;   
+    background-color: #141414;
 }

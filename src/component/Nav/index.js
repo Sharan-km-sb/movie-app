@@ -8,8 +8,8 @@ function Nav(){
     <nav>
          <div className="nav">
     <ul className='nav-buttons'>
-                <li className='buttons'><Link to="/" ><button>HOME</button></Link></li>
-                <li className='buttons'><Link to="/Search" ><button>SEARCH</button></Link></li>
+                <li className='buttons'><Link to="/Home" ><button className='nav-btn'>Home</button></Link></li>
+                <li className='buttons'><Link to="/Search" ><button className='nav-btn'>Search</button></Link></li>
             </ul>
     </div>
     </nav>

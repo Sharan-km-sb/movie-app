@@ -28,7 +28,7 @@ const MoviesList = ({
               <div className="item">
                 <img src={`${imageapi}${poster_path}`} alt={title}></img>
               </div></Link>
-              <h3>{title}</h3>
+         
 
 
             </section>

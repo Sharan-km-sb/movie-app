@@ -4,6 +4,7 @@ import { useEffect,useState } from "react";
 import axios from 'axios';
 import{useParams } from "react-router-dom";
 import Videos from "../../component/Videos";
+import Nav from "../../component/Nav";
  
 
 
@@ -25,7 +26,8 @@ function Moviedetails() {
   }, [id]);
  
     return (
-      <>
+      <>    
+      <Nav />
           <div className='movie-details'>
             <div className='movie-content' style={{
             backgroundSize:"cover",

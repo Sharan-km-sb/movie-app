@@ -1,0 +1,48 @@
+.heroheading
+{
+    color: rgba(205, 199, 199, 0.463);
+    font-size: 80px;
+  
+    max-width: 800px;
+    margin: auto;
+  
+}
+.HeroPage{
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    
+  
+}
+.welcome-card{
+    height: 400px;
+    max-width: 800px;
+    background-color: rgba(248, 213, 213, 0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(6px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding-top: 20px;
+  text-align: center;
+    
+}
+.hero-btns{
+    width:220px;
+    margin: auto;
+  
+}
+.login-btn{
+    width:100px;
+    background-color: rgba(0, 0, 0, 0.582);
+    border: none;
+    margin-right: 10px;
+    color: rgba(240, 248, 255, 0.534);
+    backdrop-filter: blur(6px);
+}
+

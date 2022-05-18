@@ -11,6 +11,9 @@ h1{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width:90%;
+    max-width:100%;
     margin: auto;   
+    background-color: #fff1f100;
+    backdrop-filter: blur(12px);
+    padding:20px 20px;
 }

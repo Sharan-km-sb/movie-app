@@ -3,7 +3,9 @@ import './Search.css';
 import {useState} from "react";
 import axios from 'axios';
 import MoviesList from "../../component/MovieList";
-import api from "../../constant/index"
+import api from "../../constant/index";
+import Nav from "../../component/Nav";
+import bgi from "../../Assets/bgsearch.jpg"
 
 function Search (){
     
@@ -24,7 +26,8 @@ function Search (){
   
 
 
-    return(<>
+    return(<>    
+      <Nav />
     <div className="search-page">
     <div className="search">
       <form onSubmit={handleonSubmit}>
@@ -37,8 +40,13 @@ function Search (){
         
       </form>
       </div>
-      <div className="movie-list">{searchedmovies.map((movie) => <MoviesList {...movie} key={movie.id}  />)}</div>
+      <div className="movie-list"
       
+     >{
+      (searchedmovies==null)
+      ? <h1>noob</h1>
+      :searchedmovies.map((movie) => <MoviesList {...movie} key={movie.id}  />)}</div>
+    
   
     </div></>);
     }

@@ -8,9 +8,9 @@
     overflow: hidden;
     flex-wrap: wrap;
     scroll-behavior: smooth;
-    height: 400px;
-    width: 200px;
-    margin-bottom: 10px;
+    height: 300x;
+    width: 210px;
+    
   text-align: center;}
 
   section {
@@ -19,9 +19,8 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      flex-wrap: wrap;
-      margin: 10px 0;
-      height: 600px;
+    
+      height: 300px;
      
   }
       .item {
@@ -32,8 +31,8 @@
         transition:  1s cubic-bezier(0.075, 0.82, 0.165, 1);
       }
         .item:hover { 
-          margin:scale(1.2);
-          transform: scale(1.1);
+          margin:scale(1.01);
+          transform: scale(1.05);
         }
         .item img{
             width: 100%;

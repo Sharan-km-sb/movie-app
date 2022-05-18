@@ -1,7 +1,7 @@
 .nav{
     position: sticky;
     z-index: 999;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.429);
     height:10vh;
     width:100%;
 }
@@ -12,26 +12,26 @@
       
 
 }
-button {
+.nav-btn
+ {
     margin-top: 15px;
 	width: 130px;
 	height: 40px;
 	cursor: pointer;
 	font-size: 18px;
 
-	letter-spacing: 5px;
-	background: #f5f4f1;
+    background-color: rgba(0, 0, 0, 0.66);
+    color:#03000097;
 	border: 2px solid black;
 	box-shadow: 0px 0px 0px rgba(0,0,0,0.4);
 	transition: 800ms;
     margin-right: 15px;
+    border-radius:5px;
+    backdrop-filter: blur(11px);
 }
-button:hover{
+.nav-btn:hover{
     color: #f5f4f1;
-    background-color: black;
+    
     border: solid 1px #ffffff;
     letter-spacing: 0.1rem;
-}
-button:active{
-    background-color: black;
 }
