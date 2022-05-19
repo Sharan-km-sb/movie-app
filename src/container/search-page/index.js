@@ -5,14 +5,16 @@ import axios from 'axios';
 import MoviesList from "../../component/MovieList";
 import api from "../../constant/index";
 import Nav from "../../component/Nav";
-import bgi from "../../Assets/bgsearch.jpg"
+import bgimg from "../../Assets/Homebackground.jpg"
 
 function Search (){
     
     const [searchTerm,setSearcTerm] = useState('');
     const [searchedmovies,setSearchedMovies] = useState([]);
     const APIkey = `d6839191e269dda942246111abe8bfda`;
-   
+    
+
+      
 
      const BaseUrl = (api.BaseUrl)
   
@@ -23,12 +25,24 @@ function Search (){
         const response = await axios.get(searchAPI);
         setSearchedMovies(response.data.results)
       }
-  
+    
+      async function fetchtrendingmovie(){
+        const response =await axios.get(`
+        https://api.themoviedb.org/3/movie/popular?api_key=d6839191e269dda942246111abe8bfda&language=en-US&page=1`);
+        setSearchedMovies(response.data.results);
+      }
+     
 
 
     return(<>    
       <Nav />
-    <div className="search-page">
+    <div></div><div className="search-page"
+         style={{
+            backgroundSize:"cover",
+            backgroundImage: `linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url("${bgimg}")`,
+            backgroundPosition:"center",
+            objectFit:"contain"}}
+    >
     <div className="search">
       <form onSubmit={handleonSubmit}>
       <input 
@@ -40,11 +54,11 @@ function Search (){
         
       </form>
       </div>
-      <div className="movie-list"
-      
-     >{
-      (searchedmovies==null)
-      ? <h1>noob</h1>
+      <div className="movie-list">
+
+        {
+      (searchedmovies.length === 0)
+      ? <h1 id="search-heading">Not found</h1>
       :searchedmovies.map((movie) => <MoviesList {...movie} key={movie.id}  />)}</div>
     
   

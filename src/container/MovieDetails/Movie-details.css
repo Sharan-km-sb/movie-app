@@ -8,6 +8,7 @@
     backdrop-filter: blur(8px);
   
   }
+
 .movie-title{
     font-size: 60px;
     color: #ffffff;
@@ -35,6 +36,7 @@
           
           max-width:50%;
           margin-right: 30px;
+          
   }
   
   .list{

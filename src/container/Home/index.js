@@ -6,7 +6,7 @@ import {useEffect,useState} from 'react';
 import axios from 'axios';
 import MoviesList from '../../component/MovieList/index';
 import Nav from "../../component/Nav";
-import homebg from "../../Assets/Homebackground.jpg"
+import homebg from "../../Assets/bg.jpg"
 
 
   
@@ -37,17 +37,19 @@ function Home () {
             
        <Nav />
         
-        <div className="home"
+       <div><div className="home"
         style={{
           backgroundSize:"cover",
-          backgroundImage: `linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url("${homebg}")`,
+          backgroundImage: `linear-gradient(to top, rgba(44,7,37,0.8), rgba(44,7,37,0.8)),url("${homebg}")`,
           backgroundPosition:"center",
-          objectFit:"contain"}}>
-            <div className="movie-list1">
+          objectFit:"contain",
+         
+          }}>
+        <div className="movie-list1">
         {movies.map((movie) => <MoviesList {...movie} key={movie.id}  />)}
         </div>
         </div>
-      
+        </div> 
           
         </>     
     );

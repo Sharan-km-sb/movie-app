@@ -16,7 +16,7 @@ function HeroPage(){
   <h1 className="heroheading">Welcome To The Movie DataBase</h1>
  
   <div className="hero-btns"> <Link to='/LoginPage'><button className="login-btn">LOG In</button></Link>
-  <Link to='/LoginPage'><button className="login-btn">Sign UP</button></Link></div>
+  <Link to='/signup'><button className="login-btn">Sign UP</button></Link></div>
   </div>
   
     

@@ -16,13 +16,13 @@ function loginPage(){
   <form className="login">
      <h3>Login Here</h3>
      
- <label for="username">Username</label>
+ <label for="username">User ID</label>
    <input  className="login-input" type="text" placeholder="Email or Phone" id="username"></input>
 
  <label for="password">Password</label>
    <input className="login-input" type="password" placeholder="Password" id="password"></input>
-  <Link to="/Home"> <button className="login-btn">Log In</button></Link>
-  <p className="sg-up">Don't Have a Account <span className="sign-up-link">Sign Up</span></p>
+  <Link  style={{ textDecoration: 'none'}} to="/Home"> <button className="login-btn " id="white-button">Log In</button></Link>
+<p className="sg-up">Don't Have a Account   <Link  style={{ textDecoration: 'none'}} to="/signup"><span className="sign-up-link">Sign Up</span></Link></p>
   </form>
           
 

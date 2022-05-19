@@ -1,0 +1,28 @@
+.signup-inputs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+
+  
+
+}
+.singup{
+    height: auto;
+    max-width: 800px;
+    background-color: rgba(231, 141, 239, 0.217);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(6px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding-top: 20px;
+ 
+} 
+
+.skip{
+    text-decoration: none;
+    list-style-type: none;
+}

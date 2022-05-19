@@ -36,7 +36,6 @@ function Moviedetails() {
             objectFit:"contain"
            
         }}>
-          
           <div className='movie-description'>
           
           <h1 className='movie-title'>{moviedata.original_title}</h1>
@@ -64,6 +63,7 @@ function Moviedetails() {
           </div>
       
           </div>
+         
           <Videos/>
           </>
              

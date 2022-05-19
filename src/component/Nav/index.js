@@ -9,6 +9,7 @@ function Nav(){
          <div className="nav">
     <ul className='nav-buttons'>
                 <li className='buttons'><Link to="/Home" ><button className='nav-btn'>Home</button></Link></li>
+                <h1 id='logo'>. TMDB .</h1>
                 <li className='buttons'><Link to="/Search" ><button className='nav-btn'>Search</button></Link></li>
             </ul>
     </div>

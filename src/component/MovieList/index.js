@@ -29,7 +29,7 @@ const MoviesList = ({
                 <img src={`${imageapi}${poster_path}`} alt={title}></img>
               </div></Link>
          
-
+          
 
             </section>
 
