@@ -11,6 +11,7 @@ function Nav(){
                 <li className='buttons'><Link to="/Home" ><button className='nav-btn'>Home</button></Link></li>
                 <h1 id='logo'>. TMDB .</h1>
                 <li className='buttons'><Link to="/Search" ><button className='nav-btn'>Search</button></Link></li>
+                <li className='buttons'><Link to="/" ><button className='nav-btn'>Sign out</button></Link></li>
             </ul>
     </div>
     </nav>

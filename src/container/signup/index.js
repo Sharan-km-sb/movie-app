@@ -29,9 +29,10 @@ function signup(){
    <input  className="login-input" type="password" placeholder="Email or Phone" id="username"></input></div> 
    <div>
   <label for="username">OTP</label>
-   <input  className="login-input" type="numeric" placeholder="Email or Phone" id="username"></input></div></div>
+   <input  className="login-input" type="number" placeholder="Email or Phone" id="username"></input></div></div>
   <Link style={{ textDecoration: 'none'}} to="/Home"> <button className="sgup-btn " id="white-button">Sign Up</button></Link>
   <Link style={{ textDecoration: 'none'}} to="/HOme"><p className="sg-up"><span style={{ textDecoration: 'none' }} className="sign-up-link">Skip</span></p></Link>
+  <p className="sg-up">Already Have an Account   <Link  style={{ textDecoration: 'none'}} to="/LoginPage"><span className="sign-up-link ">Log in</span></Link></p>
 
 </form>
 

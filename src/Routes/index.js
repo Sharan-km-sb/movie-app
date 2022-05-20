@@ -6,6 +6,7 @@ import MovieDetails from "../container/MovieDetails";
 import LoginPage from "../container/loginPage";
 import HeroPage from "../container/HeroPage";
 import Signup from "../container/signup/index";
+import PasswordReset from "../container/PasswordReset";
 
 
 
@@ -19,6 +20,7 @@ const AppRoutes = () =>{
            <Route path='/' element = {<HeroPage/>}></Route>
            <Route path='/signup' element = {<Signup/>}></Route>
            <Route path='/LoginPage' element = {<LoginPage/>}></Route>
+           <Route path='/PasswordReset' element = {<PasswordReset/>}></Route>
            <Route path='/Home' element= {<Home />}></Route>
            <Route path='/Search' element={<Search />}></Route>
            <Route path='/MovieDetails/:id' element={<MovieDetails/>}></Route>

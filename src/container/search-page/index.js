@@ -24,6 +24,7 @@ function Search (){
          
         const response = await axios.get(searchAPI);
         setSearchedMovies(response.data.results)
+        console.log(response.data.results);
       }
     
       async function fetchtrendingmovie(){
@@ -32,7 +33,7 @@ function Search (){
         setSearchedMovies(response.data.results);
       }
      
-
+     fetchtrendingmovie();
 
     return(<>    
       <Nav />
@@ -57,11 +58,11 @@ function Search (){
       <div className="movie-list">
 
         {
-      (searchedmovies.length === 0)
-      ? <h1 id="search-heading">Not found</h1>
-      :searchedmovies.map((movie) => <MoviesList {...movie} key={movie.id}  />)}</div>
+      searchedmovies.length > 0
+      ? searchedmovies.map((movie) => <MoviesList {...movie} key={movie.id}  />)
+      : <h1 id="search-heading">Not found</h1>}</div>
     
-  
+   
     </div></>);
     }
 export default Search;

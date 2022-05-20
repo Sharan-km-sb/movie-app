@@ -21,8 +21,9 @@ function loginPage(){
 
  <label for="password">Password</label>
    <input className="login-input" type="password" placeholder="Password" id="password"></input>
+   <p className="sg-up">Forgot password <Link style={{ textDecoration: 'none'}} to="/PasswordReset"> <span className="sign-up-link ">Reset</span></Link></p>
   <Link  style={{ textDecoration: 'none'}} to="/Home"> <button className="login-btn " id="white-button">Log In</button></Link>
-<p className="sg-up">Don't Have a Account   <Link  style={{ textDecoration: 'none'}} to="/signup"><span className="sign-up-link">Sign Up</span></Link></p>
+<p className="sg-up">Don't Have a Account   <Link  style={{ textDecoration: 'none'}} to="/signup"><span className="sign-up-link ">Sign Up</span></Link></p>
   </form>
           
 
