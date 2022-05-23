@@ -5,8 +5,12 @@ import Search from "../container/search-page";
 import MovieDetails from "../container/MovieDetails";
 import LoginPage from "../container/loginPage";
 import HeroPage from "../container/HeroPage";
-import Signup from "../container/signup/index";
 import PasswordReset from "../container/PasswordReset";
+import Pagenotfound from "../container/PageNotfound";
+import PrivateRoute from "./PrivateRoute";
+import PublicRoute from "./PublickRoute";
+import signup from "../container/signup/index";
+
 
 
 
@@ -15,19 +19,20 @@ import PasswordReset from "../container/PasswordReset";
 const AppRoutes = () =>{
     return(
         <>
-         <Router>
-       <Routes> 
-           <Route path='/' element = {<HeroPage/>}></Route>
-           <Route path='/signup' element = {<Signup/>}></Route>
-           <Route path='/LoginPage' element = {<LoginPage/>}></Route>
-           <Route path='/PasswordReset' element = {<PasswordReset/>}></Route>
-           <Route path='/Home' element= {<Home />}></Route>
-           <Route path='/Search' element={<Search />}></Route>
-           <Route path='/MovieDetails/:id' element={<MovieDetails/>}></Route>
+            <Router>
+                <Routes>
+                    <Route path='/' element={<PublicRoute Component={HeroPage}></PublicRoute>}></Route>
+                    <Route path='/signup' element={<PublicRoute Component={signup}></PublicRoute>}></Route>
+                    <Route path='/LoginPage' element={<PublicRoute Component={LoginPage}></PublicRoute>}></Route>
+                    <Route path='/PasswordReset' element={<PublicRoute Component={PasswordReset}></PublicRoute>}></Route>
+                    <Route path='/Home' element={<PrivateRoute Component={Home}></PrivateRoute>}></Route>
+                    <Route path='/Search' element={<PrivateRoute  Component={Search}></PrivateRoute>}></Route>
+                    <Route path='/MovieDetails/:id' element={<PrivateRoute Component={MovieDetails}></PrivateRoute>}></Route>
 
-       </Routes>
+                    <Route path='/:pagename' element={<Pagenotfound/>}></Route>
+                </Routes>
 
-   </Router>
+            </Router>
         </>)
 }
 

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import './Search.css';
 import {useState} from "react";
 import axios from 'axios';
@@ -27,13 +27,16 @@ function Search (){
         console.log(response.data.results);
       }
     
+     
+     
+     useEffect(() => {
       async function fetchtrendingmovie(){
         const response =await axios.get(`
         https://api.themoviedb.org/3/movie/popular?api_key=d6839191e269dda942246111abe8bfda&language=en-US&page=1`);
-        setSearchedMovies(response.data.results);
-      }
-     
-     fetchtrendingmovie();
+        setSearchedMovies(response.data.results);}
+
+        fetchtrendingmovie();
+     },[])
 
     return(<>    
       <Nav />
@@ -52,7 +55,8 @@ function Search (){
         className='search-bar '
         value={searchTerm}
         onChange={(e) => setSearcTerm(e.target.value)} ></input>
-        
+        <button type="submit" onClick={handleonSubmit} className="nav-btn">search</button>
+         
       </form>
       </div>
       <div className="movie-list">
@@ -60,9 +64,9 @@ function Search (){
         {
       searchedmovies.length > 0
       ? searchedmovies.map((movie) => <MoviesList {...movie} key={movie.id}  />)
-      : <h1 id="search-heading">Not found</h1>}</div>
+      :<><h1 id="search-heading">not found</h1></>}</div>
     
    
-    </div></>);
+    </div> </>);
     }
 export default Search;
